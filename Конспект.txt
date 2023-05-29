@@ -1,0 +1,7 @@
+Ввод данных в консоль:
+
+import java.util.Scanner;
+Scanner s = new Scanner(System.in);
+str text = s.nextString();
+int i = s.nextInt();
+double d = s.nextDouble();
