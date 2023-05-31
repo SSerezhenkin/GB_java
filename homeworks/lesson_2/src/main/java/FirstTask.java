@@ -1,6 +1,6 @@
 import org.json.JSONObject;
 
-public class Main {
+public class FirstTask {
     public static void main(String[] args) {
         String json = "{\"name\":\"Ivanov\", \"country\":\"Russia\", \"city\":\"Moscow\", \"age\":\"null\"}";
         JSONObject filter = new JSONObject(json);
@@ -13,5 +13,7 @@ public class Main {
         }
         String whereClauseStr = whereClause.substring(0, whereClause.length() - 5);
         String sql = "SELECT * FROM students WHERE " + whereClauseStr;
+
+        System.out.println(sql);
     }
 }
